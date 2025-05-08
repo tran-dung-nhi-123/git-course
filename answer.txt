@@ -1,0 +1,11 @@
+a,b. Câu lệnh cài đặt name và email
+git config —global [user.name](http://user.name) “Nhi”
+
+git config --global user.email “trandungnhi0@gmail.com”
+
+c,d. Tạo repo mới trên GitHub với tên git-course và push code của bài 2 lên GitHub
+- Khởi tạo repo local: git init
+- Liên kết repository vừa tạo với Git: git remote add origin git@github.com:tran-dung-nhi-123/git-course.git
+- Thêm code: git add .
+- Thêm commit: git commit -m "L1-Git"
+- git push origin main
