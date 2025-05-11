@@ -1,0 +1,28 @@
+1.
+- Khởi tạo: git init (chỉ cần lần đầu khi mới tạo repo)
+- Cấu hình:
+    - git add <file name> : đưa 1 file vào vùng staging
+    - git add . : đưa tất cả các file vào vùng staging
+- Gửi commit code với mess: git commit -m "message"
+
+2. 
+a, Tạo 3 file: file1, file2, file3 ( chưa thuộc vùng nào )
+
+b, Chạy lệnh: git init
+- Working Directory: file1, file2, file3
+
+c, Chạy lệnh: git commint -m"init project" => Lỗi
+- Working Directory: file1, file2, file3
+
+d, Chạy lệnh: git add file1
+- Working Directory: file1, file2, file3
+- Staging Area: file1
+
+e. Chạy lệnh: git commit -m"add file1"
+- Working Directory: file1, file2, file3
+- Repository: file1
+
+f. Chạy lệnh: git add file => Lỗi vì chưa tồn tại file có tên "file"
+- Working Directory: file1, file2, file3
+- Repository: file1
+
