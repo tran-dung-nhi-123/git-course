@@ -1,0 +1,4 @@
+git commit --amend  : 
+git commit --amend -m”<message>”
+git restore --staged <file>
+git reset HEAD~1 
