@@ -1,8 +1,8 @@
 1.
 - Khởi tạo: git init (chỉ cần lần đầu khi mới tạo repo)
 - Cấu hình:
-    - git add <file name> : đưa 1 file vào vùng staging
-    - git add . : đưa tất cả các file vào vùng staging
+    - git add <file_name>: Tạo 1 bản sao file từ vùng working directory lên vùng staging 
+    - git commit -m "message": Đưa các file từ vùng staging area lên repository, đồng thời tạo ra 1 phiên bản với message được lưu lại.
 - Gửi commit code với mess: git commit -m "message"
 
 2. 
