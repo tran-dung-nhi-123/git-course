@@ -1,9 +1,8 @@
 1.
-git commit --amend  : mở ra hội thoại revision
-git commit --amend -m”<message_new>”: sửa message gần nhất với nội dung message mới
-git restore --staged <file>:  Đưa file có tên <file> từ vùng staging về working directory
-git reset HEAD~1 : Đưa 1 file gần nhất từ vùng repo về working directory
-
+- git commit --amend: vào giao diện thay đổi message của commit gần nhất
+- git commit --amend -m"<message>": thay đổi message của commit gần nhất trực tiếp mà không cần vào giao diện
+- git restore --staged <file>:  Đưa file có tên <file> từ vùng staging về working directory
+- git reset HEAD~1 : Đưa 1 file gần nhất từ vùng repo về working directory  -> đưa các file changes của 1 commit gần nhất từ vùng repository về vùng working directory
 2. 
 a. Tạo 3 file: file1, file2, file3 => Chưa thuộc vùng nào
 b. Chạy lệnh: git init
@@ -48,12 +47,13 @@ c. Thêm file .gitignore, thêm vào 2 dòng:
     ii. oops/
 
 => file file.txt và tất cả các file trong folder opps/ đều không được quản lý bởi git nữa
-=> Working Directory: file2.txt
+=> đưa các file changes của 1 commit gần nhất từ vùng repository về vùng working directory. => lúc này ở working directory sẽ có them file .gitignore nữa nha
+=> Working Directory: file2.txt, .gitignore
 
 d. Chạy lệnh: git add .
-- Working Directory: file2.txt
-- Staging Area: file2.txt
+- Working Directory: file2.txt, .gitignore
+- Staging Area: file2.txt, .gitignore
 
 e. Chạy lệnh: git commit -m"init project"
-- - Working Directory: file2.txt
-- Repository: file2.txt
+- Working Directory: file2.txt, .gitignore
+- Repository: file2.txt, .gitignore
